@@ -1,4 +1,4 @@
-service: mybackend-todo
+service: mybackend
 
 provider:
   name: aws
@@ -6,7 +6,7 @@ provider:
 
 functions:
   listTodos:
-    handler: handler.listTodos
+    handler: handler.ser
     events:
       - http:
           path: todo/list
